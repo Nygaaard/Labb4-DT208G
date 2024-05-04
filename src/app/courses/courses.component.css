@@ -42,6 +42,9 @@ td:nth-child(3) {
 .sort-instructions p {
   font-size: 0.6em;
 }
+.wrap {
+  word-wrap: break-word;
+}
 
 @media all and (max-width: 800px) {
   th,
@@ -50,12 +53,5 @@ td:nth-child(3) {
   }
   td {
     padding: 4px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  th,
-  td {
-    font-size: 0.7rem;
   }
 }
