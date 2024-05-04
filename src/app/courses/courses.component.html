@@ -1,0 +1,39 @@
+<div class="search-div">
+  <label for="filter">Filtera efter kursnamn:</label>
+  <br />
+  <input
+    type="text"
+    id="filter"
+    [(ngModel)]="inputValue"
+    (input)="filterCourses()"
+    class="input"
+  />
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th class="click" (click)="sortByCode()">Kurskod</th>
+      <th class="click" (click)="sortByName()">Kursnamn</th>
+      <th class="click" (click)="sortByProgression()">Progression</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let course of filteredCourses">
+      <td>{{ course.code }}</td>
+      <td>{{ course.coursename }}</td>
+      <td>{{ course.progression }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="sort-instructions">
+  <p>
+    Klicka på tabellrubrikerna för att sortera efter kurskod, kursnamn eller
+    progression.
+  </p>
+</div>
+
+@if(filteredCourses.length === 0) {
+<p class="error">Inga kurser matchar din sökning...</p>
+}

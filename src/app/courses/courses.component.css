@@ -1,0 +1,61 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  width: 20%;
+}
+td:nth-child(2) {
+  width: 60%;
+}
+td:nth-child(3) {
+  width: 20%;
+}
+.search-div {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.input {
+  padding: 0.3rem;
+  width: 60%;
+}
+.error {
+  color: red;
+}
+.click:hover {
+  cursor: pointer;
+  color: #676565;
+}
+.click:active {
+  color: #000;
+}
+.sort-instructions {
+  padding: 0.3rem;
+}
+.sort-instructions p {
+  font-size: 0.6em;
+}
+
+@media all and (max-width: 800px) {
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+  td {
+    padding: 4px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  th,
+  td {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,15 @@
+header {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+@media all and (max-width: 900px) {
+  header {
+    font-size: 0.8rem;
+  }
+}
+@media all and (max-width: 600px) {
+  header {
+    font-size: 0.7rem;
+  }
+}
